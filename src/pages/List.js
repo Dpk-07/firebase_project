@@ -6,6 +6,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { Box, Button } from '@mui/material';
 import { useFirebase } from '../context/Firebase';
+import Navbar from '../components/Navbar';
 
 export default function List() {
     const firebase = useFirebase();
@@ -36,6 +37,7 @@ export default function List() {
 
   return (
     <React.Fragment>
+        <Navbar/>
         <Box>
       <Typography  textAlign={'center'} variant="h6" gutterBottom>
         Book Listing

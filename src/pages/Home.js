@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useFirebase } from '../context/Firebase'
 import BookCard from '../components/Card';
 import { Box } from '@mui/material';
+import Navbar from '../components/Navbar';
 
 
 
@@ -16,9 +17,9 @@ const Home = () => {
     console.log(books);
   return (
     <>
+    <Navbar/>
     <div>
-        <h1>Books</h1>
-        <Box sx={{display:'flex',gap:'6px'}}>
+        <Box sx={{display:'flex',gap:'6px' ,marginTop:'10px'}}>
         {
             books?.map((data)=> <BookCard {...data.data()}/>)
         }

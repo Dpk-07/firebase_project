@@ -16,7 +16,7 @@ export default function BookCard(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height:  350}}
         image={url}
         title="green iguana"
       />
@@ -25,7 +25,7 @@ export default function BookCard(props) {
           {props.bookname}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          The book title is {props.bookname} and this book is sold by {props.displayname} price os this book {props.price}
+          The book title is {props.bookname} and  price of this book {props.price}
         </Typography>
       </CardContent>
       <CardActions>
